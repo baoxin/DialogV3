@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdk 34
+    namespace "com.kongzue.dialogdemo"
     defaultConfig {
         applicationId "com.kongzue.dialogdemo"
         minSdkVersion 19
-        targetSdkVersion 28
         versionCode 80
         versionName "3.2.0"
 
@@ -23,7 +23,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.kongzue.baseframework:baseframework:6.7.2'
-    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.kongzue.baseframeworkx:baseframework:6.7.1'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.1'
     implementation project(':dialog')
 }

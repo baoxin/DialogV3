@@ -13,10 +13,11 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.support.v8.renderscript.Allocation;
-import android.support.v8.renderscript.Element;
-import android.support.v8.renderscript.RenderScript;
-import android.support.v8.renderscript.ScriptIntrinsicBlur;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.RSRuntimeException;
+import android.renderscript.RenderScript;
+import android.renderscript.ScriptIntrinsicBlur;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
@@ -158,7 +159,7 @@ public class BlurView extends View {
                 try {
                     mRenderScript = RenderScript.create(getContext());
                     mBlurScript = ScriptIntrinsicBlur.create(mRenderScript, Element.U8_4(mRenderScript));
-                } catch (android.support.v8.renderscript.RSRuntimeException e) {
+                } catch (RSRuntimeException e) {
                     if (isDebug(getContext())) {
                         if (e.getMessage() != null && e.getMessage().startsWith("Error loading RS jni library: java.lang.UnsatisfiedLinkError:")) {
                             throw new RuntimeException("Error loading RS jni library, Upgrade buildToolsVersion=\"24.0.2\" or higher may solve this issue");
