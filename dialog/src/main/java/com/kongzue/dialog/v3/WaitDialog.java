@@ -1,6 +1,7 @@
 package com.kongzue.dialog.v3;
 
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Author: @Kongzue

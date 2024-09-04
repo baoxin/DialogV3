@@ -1,14 +1,13 @@
 package com.kongzue.dialog.util.view;
 
 import android.animation.Animator;
-import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
+import androidx.annotation.Nullable;
 
 import com.kongzue.dialog.R;
 import com.kongzue.dialog.interfaces.OnDismissListener;

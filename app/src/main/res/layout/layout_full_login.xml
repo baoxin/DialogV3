@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="· 使用云同步备份您的存档文件"
-            android:textColor="@color/black75"
+            android:textColor="@color/black"
             android:textSize="13dp" />
 
         <TextView
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
             android:text="· 享受随时随地的客户服务及7*24小时电话咨询服务"
-            android:textColor="@color/black75"
+            android:textColor="@color/black"
             android:textSize="13dp" />
 
         <TextView
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
             android:text="· 免费的远程协助和更大的云端存储空间"
-            android:textColor="@color/black75"
+            android:textColor="@color/black"
             android:textSize="13dp" />
 
     </LinearLayout>

@@ -3,18 +3,15 @@ package com.kongzue.dialog.util.view;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.kongzue.dialog.R;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
+
 import com.kongzue.dialog.util.DialogSettings;
 
 import java.lang.reflect.Method;
@@ -25,7 +22,7 @@ import java.util.List;
  * @author: androiddevelop
  * @github: https://github.com/androiddevelop/AlignTextView (CBAlignTextView 部分修改)
  */
-public class ContentTextView extends android.support.v7.widget.AppCompatTextView {
+public class ContentTextView extends AppCompatTextView {
     
     private final static String TAG = ">>>";
     private final static char SPACE = ' '; //空格;
