@@ -11,8 +11,6 @@ android {
     namespace "com.kongzue.dialog"
     defaultConfig {
         minSdkVersion 17
-        versionCode 84
-        versionName "3.2.5"
 
         renderscriptTargetApi 17
         renderscriptSupportModeEnabled true    // Enable RS support
