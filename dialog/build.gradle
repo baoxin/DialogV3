@@ -28,5 +28,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.20"
+    // 如果需要使用 JDK 8 的扩展，可以直接使用以下版本
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20"
 }
